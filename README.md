@@ -2,3 +2,7 @@
 
 # mockdraft-2020
 Scraping mock drafts for the 2020 NFL Draft
+
+Using ScrapySharp to get stuff done.
+
+Application written in .NET Core 3.1
