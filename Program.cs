@@ -26,13 +26,20 @@ namespace mockdraft_2020
             //html body div#outer div#wrapper2 div#content table
             ///html/body/div[3]/div[3]/div[1]/table[1]
             
+            // Need to get date of mock draft eventually.
+
             getMockDraft(document1);
+            getMockDraft(document2);
+            getMockDraft(document3);
+            getMockDraft(document4);
+            getMockDraft(document5);
+            getMockDraft(document6);
 
 
             // Document data is of type HtmlAgilityPack.HtmlDocument - need to parse it to find info.
             // I'm pretty sure I'm looking for tables with this attribute: background-image: linear-gradient(to bottom right, #0b3661, #5783ad);
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Behold, the draft!");
 
             //launch.js-
 
@@ -66,6 +73,7 @@ namespace mockdraft_2020
         }
         public static void getMockDraft(HtmlAgilityPack.HtmlDocument doc)
         {
+            // This is still messy from debugging the different values.  It should be optimized.
             var dn = doc.DocumentNode;
             var dns = dn.SelectNodes("/html/body/div/div/div/table");
             var attr = dns[1].Attributes;
@@ -84,9 +92,6 @@ namespace mockdraft_2020
                 }
             }
             var hasGradient = dns[1].Attributes.Contains("background-image");
-            var test = "test";
-
-
         }
         public static void createMockDraftEntry(HtmlNode tableRow)
         {
@@ -124,10 +129,14 @@ namespace mockdraft_2020
                                     .Replace("\t","")
                                     .Replace(" ","");
             
-            var lookHere = "is this it?";
-
-
-
+            
+            MockDraftPick mdp = new MockDraftPick(pickNumber, teamCity, playerName, playerSchool, playerPosition, reachValue);
+            Console.WriteLine(mdp.pickNumber);
+            Console.WriteLine(mdp.teamCity);
+            Console.WriteLine(mdp.playerName);
+            Console.WriteLine(mdp.school);
+            Console.WriteLine(mdp.position);
+            Console.WriteLine(mdp.reachValue);
         }
     }
 }
