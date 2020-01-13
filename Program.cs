@@ -131,6 +131,7 @@ namespace mockdraft_2020
             
             
             MockDraftPick mdp = new MockDraftPick(pickNumber, teamCity, playerName, playerSchool, playerPosition, reachValue);
+            Console.WriteLine(mdp.round);
             Console.WriteLine(mdp.pickNumber);
             Console.WriteLine(mdp.teamCity);
             Console.WriteLine(mdp.playerName);
