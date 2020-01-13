@@ -21,12 +21,46 @@ namespace mockdraft_2020
             var document5 = webGet.Load("https://www.drafttek.com/2020-NFL-Mock-Draft/2020-NFL-Mock-Draft-Round-4.asp");
             var document6 = webGet.Load("https://www.drafttek.com/2020-NFL-Mock-Draft/2020-NFL-Mock-Draft-Round-6.asp");
 
+            //Console.WriteLine(document1.ParsedText);
+            //#content > table:nth-child(9)
+            //html body div#outer div#wrapper2 div#content table
+            ///html/body/div[3]/div[3]/div[1]/table[1]
             Console.WriteLine("Parsing data...");
 
             // Document data is of type HtmlAgilityPack.HtmlDocument - need to parse it to find info.
             // I'm pretty sure I'm looking for tables with this attribute: background-image: linear-gradient(to bottom right, #0b3661, #5783ad);
 
             Console.WriteLine("Hello World!");
+
+            //launch.js-
+
+            // {
+            //     // Use IntelliSense to find out which attributes exist for C# debugging
+            //     // Use hover for the description of the existing attributes
+            //     // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            //     "version": "0.2.0",
+            //     "configurations": [
+            //             {
+            //                 "name": ".NET Core Launch (console)",
+            //                 "type": "coreclr",
+            //                 "request": "launch",
+            //                 "preLaunchTask": "build",
+            //                 // If you have changed target frameworks, make sure to update the program path.
+            //                 "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/linux-x64/mockdraft-2020.dll",
+            //                 "args": [],
+            //                 "cwd": "${workspaceFolder}",
+            //                 // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            //                 "console": "internalConsole",
+            //                 "stopAtEntry": false
+            //             },
+            //             {
+            //                 "name": ".NET Core Attach",
+            //                 "type": "coreclr",
+            //                 "request": "attach",
+            //                 "processId": "${command:pickProcess}"
+            //             }
+            //         ]
+            //     }
         }
     }
 }
