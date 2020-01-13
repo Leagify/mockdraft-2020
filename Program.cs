@@ -26,7 +26,7 @@ namespace mockdraft_2020
             //html body div#outer div#wrapper2 div#content table
             ///html/body/div[3]/div[3]/div[1]/table[1]
             
-            // Need to get date of mock draft eventually.
+            
 
             getMockDraft(document1);
             getMockDraft(document2);
@@ -39,6 +39,8 @@ namespace mockdraft_2020
             // Document data is of type HtmlAgilityPack.HtmlDocument - need to parse it to find info.
             // I'm pretty sure I'm looking for tables with this attribute: background-image: linear-gradient(to bottom right, #0b3661, #5783ad);
 
+            // Need to get date of mock draft eventually.
+            string draftDate = getDraftDate(document1);
             Console.WriteLine("Behold, the draft!");
 
             //launch.js-
@@ -138,6 +140,20 @@ namespace mockdraft_2020
             Console.WriteLine(mdp.school);
             Console.WriteLine(mdp.position);
             Console.WriteLine(mdp.reachValue);
+        }
+        public static string getDraftDate(HtmlAgilityPack.HtmlDocument doc)
+        {
+            HtmlNode hn = doc.DocumentNode;
+            HtmlNode hi1 = hn.SelectSingleNode("//*[@id='HeadlineInfo1']");
+            Console.WriteLine(hi1.InnerText);
+            string hi2 = hi1.InnerText.Replace(" EST", "").Trim();
+            //Change date to proper date. The original format should be like this:
+            //" May 21, 2019 2:00 AM EST"
+            DateTime parsedDate;
+            DateTime.TryParse(hi2, out parsedDate);
+            string dateInNiceFormat = parsedDate.ToString("yyyy-MM-dd");
+            Console.WriteLine(dateInNiceFormat);
+            return dateInNiceFormat;
         }
     }
 }
