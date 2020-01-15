@@ -27,6 +27,8 @@ namespace mockdraft_2020
             ///html/body/div[3]/div[3]/div[1]/table[1]
             
             
+            // Need to get date of mock draft eventually.
+            string draftDate = getDraftDate(document1);
 
             getMockDraft(document1);
             getMockDraft(document2);
@@ -39,8 +41,7 @@ namespace mockdraft_2020
             // Document data is of type HtmlAgilityPack.HtmlDocument - need to parse it to find info.
             // I'm pretty sure I'm looking for tables with this attribute: background-image: linear-gradient(to bottom right, #0b3661, #5783ad);
 
-            // Need to get date of mock draft eventually.
-            string draftDate = getDraftDate(document1);
+            
             Console.WriteLine("Behold, the draft!");
 
             //launch.js-
@@ -134,6 +135,7 @@ namespace mockdraft_2020
             
             MockDraftPick mdp = new MockDraftPick(pickNumber, teamCity, playerName, playerSchool, playerPosition, reachValue);
             Console.WriteLine(mdp.round);
+            Console.WriteLine(mdp.leagifyPoints);
             Console.WriteLine(mdp.pickNumber);
             Console.WriteLine(mdp.teamCity);
             Console.WriteLine(mdp.playerName);
@@ -150,9 +152,18 @@ namespace mockdraft_2020
             //Change date to proper date. The original format should be like this:
             //" May 21, 2019 2:00 AM EST"
             DateTime parsedDate;
-            DateTime.TryParse(hi2, out parsedDate);
-            string dateInNiceFormat = parsedDate.ToString("yyyy-MM-dd");
-            Console.WriteLine(dateInNiceFormat);
+            bool parseWorks = DateTime.TryParse(hi2, out parsedDate);
+            string dateInNiceFormat = "";
+            if (parseWorks)
+            {
+                dateInNiceFormat = parsedDate.ToString("yyyy-MM-dd");
+            }
+            else
+            {
+                dateInNiceFormat = DateTime.Now.ToString("yyyy-MM-dd");
+            }
+            
+            Console.WriteLine("Date parsed: " + parsedDate + " DateTime parse worked?: " + parseWorks + "date output" + dateInNiceFormat);
             return dateInNiceFormat;
         }
     }
