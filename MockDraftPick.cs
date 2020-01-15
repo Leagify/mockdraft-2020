@@ -12,6 +12,7 @@ namespace mockdraft_2020
         public string school;
         public string position;
         public string reachValue;
+        public int leagifyPoints;
 
         public MockDraftPick(string pick, string team, string name, string school, string pos, string relativeVal)
         {
@@ -22,10 +23,10 @@ namespace mockdraft_2020
             this.school = school;
             this.position = pos;
             this.reachValue = relativeVal;
+            this.leagifyPoints = convertPickToPoints(pick);
         }
         public static int convertPickToRound(string pick)
         {
-            // TODO: convert pick string to int, then compare that number to the picks that are assigned to each round.
             // I'm not certain if this mock will add compensatory picks. 
             int intpick = 0;
             var canParse = int.TryParse(pick, out intpick);
@@ -63,15 +64,78 @@ namespace mockdraft_2020
                     return 7;
                 }
                 return 0;
-
-
-
             }
             else
             {
                 return 0;
             }
             
+        }
+        public static int convertPickToPoints(string pick)
+        {
+            int intpick = 0;
+            var canParse = int.TryParse(pick, out intpick);
+            if (canParse)
+            {
+                /* 
+                    Top Pick: 40 Points
+                    Picks 2-10: 35 Points
+                    Picks 11-20: 30 Points
+                    Picks 21-32: 25 Points
+                    Picks 33-48: 20 Points
+                    Picks 49-64: 15 Points
+                    Round 3: 10 Points
+                    Round 4: 8 Points
+                    Round 5: 7 Points
+                    Round 6: 6 Points
+                    Round 7: 5 Points
+                */
+                if(intpick == 1)
+                {
+                    return 40;
+                }
+                else if (intpick >= 2 && intpick <= 10)
+                {
+                    return 35;
+                }
+                else if (intpick >= 11 && intpick <= 20)
+                {
+                    return 30;
+                }
+                else if (intpick >= 21 && intpick <= 32)
+                {
+                    return 25;
+                }
+                else if (intpick >= 33 && intpick <= 48)
+                {
+                    return 20;
+                }
+                else if (intpick >= 49 && intpick <= 64)
+                {
+                    return 15;
+                } 
+                else if (intpick >= 65 && intpick <= 96)
+                {
+                    return 10;
+                } 
+                else if (intpick >= 97 && intpick <= 128)
+                {
+                    return 8;
+                } 
+                else if (intpick >= 129 && intpick <= 159)
+                {
+                    return 7;
+                } 
+                else if (intpick >= 160 && intpick <= 191)
+                {
+                    return 6;
+                } 
+                else if (intpick >= 192 && intpick <= 223)
+                {
+                    return 5;
+                }
+            }
+            return 0;
         }
     }
 }
