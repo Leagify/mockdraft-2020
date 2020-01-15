@@ -13,8 +13,9 @@ namespace mockdraft_2020
         public string position;
         public string reachValue;
         public int leagifyPoints;
+        public string pickDate;
 
-        public MockDraftPick(string pick, string team, string name, string school, string pos, string relativeVal)
+        public MockDraftPick(string pick, string team, string name, string school, string pos, string relativeVal, string pickDate)
         {
             this.pickNumber = pick;
             this.teamCity = team;
@@ -24,6 +25,7 @@ namespace mockdraft_2020
             this.position = pos;
             this.reachValue = relativeVal;
             this.leagifyPoints = convertPickToPoints(pick);
+            this.pickDate = pickDate;
         }
         public static int convertPickToRound(string pick)
         {

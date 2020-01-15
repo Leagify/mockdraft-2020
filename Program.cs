@@ -30,12 +30,34 @@ namespace mockdraft_2020
             // Need to get date of mock draft eventually.
             string draftDate = getDraftDate(document1);
 
-            getMockDraft(document1);
-            getMockDraft(document2);
-            getMockDraft(document3);
-            getMockDraft(document4);
-            getMockDraft(document5);
-            getMockDraft(document6);
+            List<MockDraftPick> list1 = getMockDraft(document1, draftDate);
+            List<MockDraftPick> list2 = getMockDraft(document2, draftDate);
+            List<MockDraftPick> list3 = getMockDraft(document3, draftDate);
+            List<MockDraftPick> list4 = getMockDraft(document4, draftDate);
+            List<MockDraftPick> list5 = getMockDraft(document5, draftDate);
+            List<MockDraftPick> list6 = getMockDraft(document6, draftDate);
+
+            //This is the file name we are going to write.
+            var csvFileName = $"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv";
+
+            Console.WriteLine("Creating csv...");
+
+            //Write projects to csv with date.
+            using (var writer = new StreamWriter(csvFileName))
+            using (var csv = new CsvWriter(writer))
+            {
+                csv.Configuration.RegisterClassMap<MockDraftPickMap>();
+                csv.WriteRecords(list1);
+                csv.WriteRecords(list2);
+                csv.WriteRecords(list3);
+                csv.WriteRecords(list4);
+                csv.WriteRecords(list5);
+                csv.WriteRecords(list6);
+            }
+
+
+
+
 
 
             // Document data is of type HtmlAgilityPack.HtmlDocument - need to parse it to find info.
@@ -74,8 +96,9 @@ namespace mockdraft_2020
             //         ]
             //     }
         }
-        public static void getMockDraft(HtmlAgilityPack.HtmlDocument doc)
+        public static List<MockDraftPick> getMockDraft(HtmlAgilityPack.HtmlDocument doc, string pickDate)
         {
+            List<MockDraftPick> mdpList = new List<MockDraftPick>();
             // This is still messy from debugging the different values.  It should be optimized.
             var dn = doc.DocumentNode;
             var dns = dn.SelectNodes("/html/body/div/div/div/table");
@@ -91,12 +114,14 @@ namespace mockdraft_2020
                 if (hasTheStyle)
                 {
                     var tr = node.SelectSingleNode("tr");
-                    createMockDraftEntry(tr);
+                    MockDraftPick mockDraftPick = createMockDraftEntry(tr, pickDate);
+                    mdpList.Add(mockDraftPick);
                 }
             }
             var hasGradient = dns[1].Attributes.Contains("background-image");
+            return mdpList;
         }
-        public static void createMockDraftEntry(HtmlNode tableRow)
+        public static MockDraftPick createMockDraftEntry(HtmlNode tableRow, string pickDate)
         {
             var childNodes = tableRow.ChildNodes;
             var node1 = childNodes[1].InnerText; //pick number?
@@ -133,7 +158,7 @@ namespace mockdraft_2020
                                     .Replace(" ","");
             
             
-            MockDraftPick mdp = new MockDraftPick(pickNumber, teamCity, playerName, playerSchool, playerPosition, reachValue);
+            MockDraftPick mdp = new MockDraftPick(pickNumber, teamCity, playerName, playerSchool, playerPosition, reachValue, pickDate);
             Console.WriteLine(mdp.round);
             Console.WriteLine(mdp.leagifyPoints);
             Console.WriteLine(mdp.pickNumber);
@@ -142,6 +167,7 @@ namespace mockdraft_2020
             Console.WriteLine(mdp.school);
             Console.WriteLine(mdp.position);
             Console.WriteLine(mdp.reachValue);
+            return mdp;
         }
         public static string getDraftDate(HtmlAgilityPack.HtmlDocument doc)
         {
