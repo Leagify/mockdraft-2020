@@ -1,4 +1,4 @@
-Pick,Round,Player,School,Position,Team,Reach/Value,CollegeClass,Date
+Pick,Round,Player,School,Position,Team,ReachValue,Points,Date
 1,1,Joe Burrow,LSU,QB,Cincinnati,-1,40,2020-01-11
 2,1,Chase Young,Ohio State,EDGE,Washington,+1,35,2020-01-11
 3,1,Jerry Jeudy,Alabama,WRF,Detroit,-2,35,2020-01-11

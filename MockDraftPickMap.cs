@@ -23,8 +23,8 @@ namespace mockdraft_2020
             Map(m => m.school).Index(3).Name("School");
             Map(m => m.position).Index(4).Name("Position");
             Map(m => m.teamCity).Index(5).Name("Team");
-            Map(m => m.reachValue).Index(6).Name("Reach/Value");
-            Map(m => m.leagifyPoints).Index(7).Name("CollegeClass");
+            Map(m => m.reachValue).Index(6).Name("ReachValue");
+            Map(m => m.leagifyPoints).Index(7).Name("Points");
             Map(m => m.pickDate).Index(8).Name("Date");
         }
     }

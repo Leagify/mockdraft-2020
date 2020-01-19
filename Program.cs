@@ -55,7 +55,12 @@ namespace mockdraft_2020
                 csv.WriteRecords(list6);
             }
 
-
+            CheckForMismatches(list1);
+            CheckForMismatches(list2);
+            CheckForMismatches(list3);
+            CheckForMismatches(list4);
+            CheckForMismatches(list5);
+            CheckForMismatches(list6);
 
 
 
@@ -141,11 +146,12 @@ namespace mockdraft_2020
                                     .Replace("\n","")
                                     .Replace("\t","")
                                     .TrimEnd();
-            string playerSchool = node5.ChildNodes[3].InnerText
+            string playerSchoolBeforeChecking = node5.ChildNodes[3].InnerText
                                     .Replace("\r","")
                                     .Replace("\n","")
                                     .Replace("\t","")
                                     .TrimEnd(); // this may have a space afterwards.
+            string playerSchool = checkSchool(playerSchoolBeforeChecking);
             string playerPosition = node5.ChildNodes[5].InnerText
                                     .Replace("\r","")
                                     .Replace("\n","")
@@ -191,6 +197,121 @@ namespace mockdraft_2020
             
             Console.WriteLine("Date parsed: " + parsedDate + " DateTime parse worked?: " + parseWorks + "date output" + dateInNiceFormat);
             return dateInNiceFormat;
+        }
+        public static string checkSchool(string school)
+        {
+            switch(school)
+            {
+                case "Miami":
+                    return "Miami (FL)";
+                case "Mississippi":
+                    return "Ole Miss";
+                case "Central Florida":
+                    return "UCF";
+                case "MTSU":
+                    return "Middle Tennessee";
+                case "Eastern Carolina":
+                    return "East Carolina";
+                case "Pittsburgh":
+                    return "Pitt";
+                case "FIU":
+                    return "Florida International";
+                case "Florida St":
+                    return "Florida State";
+                case "Penn St":
+                    return "Penn State";
+                case "Minneosta":
+                    return "Minnesota";
+                case "Mississippi St.":
+                    return "Mississippi State";
+                case "Mississippi St":
+                    return "Mississippi State";
+                case "Oklahoma St":
+                    return "Oklahoma State";
+                case "Boise St":
+                    return "Boise State";
+                case "Lenoir-Rhyne":
+                    return "Lenoir–Rhyne";
+                case "NCState":
+                    return "NC State";
+                case "W Michigan":
+                    return "Western Michigan";
+                case "UL Lafayette":
+                    return "Louisiana-Lafayette";
+                case "Cal":
+                    return "California";
+                case "S. Illinois":
+                    return "Southern Illinois";
+                case "UConn":
+                    return "Connecticut";
+                case "LA Tech":
+                    return "Louisiana Tech";
+                case "Louisiana":
+                    return "Louisiana-Lafayette";
+                case "San Diego St":
+                    return "San Diego State";
+                case "South Carolina St":
+                    return "South Carolina State";
+                case "Wake Forrest":
+                    return "Wake Forest";
+                case "NM State":
+                    return "New Mexico State";
+                case "New Mexico St":
+                    return "New Mexico State";
+                default:
+                    return school;
+            }
+        }
+        private static void CheckForMismatches(List<MockDraftPick> listOfPicks)
+        {
+            //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + csvFileName + "....." + Environment.NewLine);
+
+            Console.WriteLine("Checking for mismatches....");
+            // Read in data from a different project.
+            List<School> schoolsAndConferences;
+            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
+            using (var csv = new CsvReader(reader))
+            {
+                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
+                schoolsAndConferences = csv.GetRecords<School>().ToList();
+            }
+
+            List<MockDraftPick> ranks = listOfPicks;
+
+            var schoolMismatches = from r in ranks
+                                    join school in schoolsAndConferences on r.school equals school.schoolName into mm
+                                    from school in mm.DefaultIfEmpty()
+                                    where school is null
+                                    select new {
+                                        rank = r.pickNumber,
+                                        name = r.playerName,
+                                        college = r.school
+                                    }
+                                    ;
+
+            bool noMismatches = true;
+
+            if (schoolMismatches.Count() > 0)
+            {
+                //File.WriteAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", "");
+            }
+
+            foreach (var s in schoolMismatches){
+                noMismatches = false;
+                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", $"{s.rank}, {s.name}, {s.college}" + Environment.NewLine);
+                Console.WriteLine($"{s.rank}, {s.name}, {s.college}");
+            }
+
+            if (noMismatches)
+            {
+                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "No mismatches in " + csvFileName + "....." + Environment.NewLine);
+                Console.WriteLine("No mismatches in " + listOfPicks.ToString() + ".....");
+            }
+            else
+            {
+                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", schoolMismatches.Count() + " mismatches in " + csvFileName + ".....Check Mismatches.log." + Environment.NewLine);
+                Console.WriteLine(schoolMismatches.Count() + " mismatches in " + listOfPicks.ToString() + ".....");
+            }
         }
     }
 }

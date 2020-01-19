@@ -1,4 +1,5 @@
 using System;
+using CsvHelper.Configuration;
 
 namespace mockdraft_2020
 {
@@ -138,6 +139,22 @@ namespace mockdraft_2020
                 }
             }
             return 0;
+        }
+    }
+    public sealed class MockDraftPickCsvMap : ClassMap<MockDraftPick>
+    {
+        public MockDraftPickCsvMap()
+        {
+            //Pick,Round,Player,School,Position,Team,ReachValue,Points,Date
+            Map(m => m.pickNumber).Name("Pick");
+            Map(m => m.round).Name("Round");
+            Map(m => m.playerName).Name("Player");
+            Map(m => m.school).Name("School");
+            Map(m => m.position).Name("Position");
+            Map(m => m.teamCity).Name("Team");
+            Map(m => m.reachValue).Name($"ReachValue");
+            Map(m => m.leagifyPoints).Name("Points");
+            Map(m => m.pickDate).Name("Date");
         }
     }
 }
