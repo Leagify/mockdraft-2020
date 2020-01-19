@@ -165,7 +165,7 @@ Pick,Round,Player,School,Position,Team,ReachValue,Points,Date
 164,6,Isaiah Hodgins,Oregon State,WRF,Carolina,-12,6,2020-01-15
 165,6,Zack Shackelford,Texas,OC,Miami,+7,6,2020-01-15
 166,6,Keandre Jones,Maryland,OLB,LA Chargers,+12,6,2020-01-15
-167,6,Levante Bellamy,W Michigan,RBC,Cleveland (Trade),+22,6,2020-01-15
+167,6,Levante Bellamy,Western Michigan,RBC,Cleveland (Trade),+22,6,2020-01-15
 168,6,Colby Parkinson,Stanford,TE,Buffalo (Trade),-5,6,2020-01-15
 169,6,Bryan Edwards,South Carolina,WRF,Jacksonville,-19,6,2020-01-15
 170,6,Eno Benjamin,Arizona State,RBF,Philadelphia (Trade),+8,6,2020-01-15
@@ -183,7 +183,7 @@ Pick,Round,Player,School,Position,Team,ReachValue,Points,Date
 182,6,J.R. Reed,Georgia,S,Buffalo (Trade),-8,6,2020-01-15
 183,6,Stanford Samuels III,Florida State,CB,New Orleans,-21,6,2020-01-15
 184,6,Benning Potoa'e,Washington,DL3T,Minnesota,+9,6,2020-01-15
-185,6,Matt Peart,UConn,OT,New England (Trade),-37,6,2020-01-15
+185,6,Matt Peart,Connecticut,OT,New England (Trade),-37,6,2020-01-15
 186,6,Ross Blacklock,TCU,DL3T,Jacksonville (Trade),+5,6,2020-01-15
 187,6,Bravvion Roy,Baylor,DL1T,Baltimore,-19,6,2020-01-15
 188,6,Harrison Bryant,Florida Atlantic,TE,Tennessee,-5,6,2020-01-15
@@ -219,6 +219,6 @@ Pick,Round,Player,School,Position,Team,ReachValue,Points,Date
 218,7,Sean Pollard,Clemson,OC,Seattle,-14,5,2020-01-15
 219,7,Chauncey Rivers,Mississippi State,DL5T,Green Bay (Trade),+20,5,2020-01-15
 220,7,Chase Claypool,Notre Dame,WRF,Green Bay (Trade),+11,5,2020-01-15
-221,7,Aaron Robinson,Central Florida,CB,NY Giants (Trade),-14,5,2020-01-15
+221,7,Aaron Robinson,UCF,CB,NY Giants (Trade),-14,5,2020-01-15
 222,7,Tre Walker,San Jose State,WRS,Miami (Trade),-26,5,2020-01-15
 223,7,Kendrick Rogers,Texas A&M,WRF,San Francisco,-8,5,2020-01-15

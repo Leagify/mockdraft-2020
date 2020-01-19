@@ -16,6 +16,8 @@ namespace mockdraft_2020
         public int leagifyPoints;
         public string pickDate;
 
+
+        public MockDraftPick(){}
         public MockDraftPick(string pick, string team, string name, string school, string pos, string relativeVal, string pickDate)
         {
             this.pickNumber = pick;
