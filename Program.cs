@@ -62,7 +62,10 @@ namespace mockdraft_2020
             CheckForMismatches(list5);
             CheckForMismatches(list6);
 
-
+            CheckForMismatches($"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv");
+            CheckForMismatches($"mocks{Path.DirectorySeparatorChar}2020-01-11-mock.csv");
+            CheckForMismatches($"mocks{Path.DirectorySeparatorChar}2020-01-15-mock.csv");
+            
 
 
             // Document data is of type HtmlAgilityPack.HtmlDocument - need to parse it to find info.
@@ -311,6 +314,62 @@ namespace mockdraft_2020
             {
                 //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", schoolMismatches.Count() + " mismatches in " + csvFileName + ".....Check Mismatches.log." + Environment.NewLine);
                 Console.WriteLine(schoolMismatches.Count() + " mismatches in " + listOfPicks.ToString() + ".....");
+            }
+        }
+        private static void CheckForMismatches(string csvFileName)
+        {
+            //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "Checking for mismatches in " + csvFileName + "....." + Environment.NewLine);
+            Console.WriteLine("Checking for mismatches in " + csvFileName + ".....");
+            // Read in data from a different project.
+            List<School> schoolsAndConferences;
+            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
+            using (var csv = new CsvReader(reader))
+            {
+                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
+                schoolsAndConferences = csv.GetRecords<School>().ToList();
+            }
+
+            List<MockDraftPick> ranks;
+            using (var reader = new StreamReader(csvFileName))
+            using (var csv = new CsvReader(reader))
+            {
+                csv.Configuration.RegisterClassMap<MockDraftPickCsvMap>();
+                ranks = csv.GetRecords<MockDraftPick>().ToList();
+            }
+
+            var schoolMismatches = from r in ranks
+                                    join school in schoolsAndConferences on r.school equals school.schoolName into mm
+                                    from school in mm.DefaultIfEmpty()
+                                    where school is null
+                                    select new {
+                                        rank = r.pickNumber,
+                                        name = r.playerName,
+                                        college = r.school
+                                    }
+                                    ;
+
+            bool noMismatches = true;
+
+            if (schoolMismatches.Count() > 0)
+            {
+                //File.WriteAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", "");
+            }
+
+            foreach (var s in schoolMismatches){
+                noMismatches = false;
+                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Mismatches.log", $"{s.rank}, {s.name}, {s.college}" + Environment.NewLine);
+                Console.WriteLine($"{s.rank}, {s.name}, {s.college}");
+            }
+
+            if (noMismatches)
+            {
+                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", "No mismatches in " + csvFileName + "....." + Environment.NewLine);
+                Console.WriteLine("No mismatches in " + csvFileName + ".....");
+            }
+            else
+            {
+                //File.AppendAllText($"logs{Path.DirectorySeparatorChar}Status.log", schoolMismatches.Count() + " mismatches in " + csvFileName + ".....Check Mismatches.log." + Environment.NewLine);
+                Console.WriteLine(schoolMismatches.Count() + " mismatches in " + csvFileName + ".....");
             }
         }
     }

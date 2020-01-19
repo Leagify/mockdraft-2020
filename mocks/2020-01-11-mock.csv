@@ -36,7 +36,7 @@ Pick,Round,Player,School,Position,Team,ReachValue,Points,Date
 35,2,Cameron Dantzler,Mississippi State,CB,Detroit,+5,20,2020-01-11
 36,2,Trey Adams,Washington,OT,NY Giants,+1,20,2020-01-11
 37,2,Prince Tega Wanogho,Auburn,OT,LA Chargers,+0,20,2020-01-11
-38,2,Hamsah Nasirildeen,FSU,S,Carolina,-29,20,2020-01-11
+38,2,Hamsah Nasirildeen,Florida State,S,Carolina,-29,20,2020-01-11
 39,2,Jonathan Taylor,Wisconsin,RBF,Miami,+21,20,2020-01-11
 40,2,D'Andre Swift,Georgia,RBF,Arizona,+18,20,2020-01-11
 41,2,Xavier McKinney,Alabama,S,Cleveland,+5,20,2020-01-11
@@ -137,13 +137,13 @@ Pick,Round,Player,School,Position,Team,ReachValue,Points,Date
 136,5,T.J. McCoy,Louisville,OC,Pittsburgh (Trade),+9,7,2020-01-11
 137,5,Lamical Perine,Florida,RBF,Buffalo (Trade),+1,7,2020-01-11
 138,5,Zack Moss,Utah,RBF,San Francisco (Trade),+21,7,2020-01-11
-139,5,Richie Grant,Central Florida,S,Atlanta,+9,7,2020-01-11
+139,5,Richie Grant,UCF,S,Atlanta,+9,7,2020-01-11
 140,5,Kylin Hill,Mississippi State,RBC,NY Jets,+19,7,2020-01-11
 141,5,Antonio Gandy-Golden,Liberty,WRF,Las Vegas,+0,7,2020-01-11
 142,5,Benito Jones,Ole Miss,DL1T,Indianapolis,-8,7,2020-01-11
 143,5,Jordan Love,Utah State,QB,Tampa Bay,+23,7,2020-01-11
 144,5,Lloyd Cushenberry,LSU,OC,Miami (Trade),+9,7,2020-01-11
-145,5,Kyle Dugger,Lenoir-Rhyne,S,Chicago,+5,7,2020-01-11
+145,5,Kyle Dugger,Lenoir–Rhyne,S,Chicago,+5,7,2020-01-11
 146,5,Trevon Hill,Miami (FL),EDGE,Dallas,-8,7,2020-01-11
 147,5,Denzel Mims,Baylor,WRF,Jacksonville (Trade),+0,7,2020-01-11
 148,5,Clyde Edwards-Helaire,LSU,RBF,Philadelphia,+25,7,2020-01-11
@@ -156,7 +156,7 @@ Pick,Round,Player,School,Position,Team,ReachValue,Points,Date
 155,5,Cam Brown,Penn State,ILB,Detroit (Trade),+9,7,2020-01-11
 156,5,Ben Cleveland,Georgia,OG,Kansas City,-11,7,2020-01-11
 157,5,Jared Pinkney,Vanderbilt,TE,Green Bay,-60,7,2020-01-11
-158,5,Brendon Hayes,Central Florida,DL5T,San Francisco,+7,7,2020-01-11
+158,5,Brendon Hayes,UCF,DL5T,San Francisco,+7,7,2020-01-11
 159,5,Ke'Shawn Vaughn,Vanderbilt,RBF,Baltimore,+4,7,2020-01-11
 160,6,Luq Barcoo,San Diego State,CB,Cincinnati,+2,6,2020-01-11
 161,6,Saahdiq Charles,LSU,OT,Denver (Trade),-26,6,2020-01-11
