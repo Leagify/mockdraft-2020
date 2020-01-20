@@ -26,6 +26,7 @@ namespace mockdraft_2020
             Map(m => m.reachValue).Index(6).Name("ReachValue");
             Map(m => m.leagifyPoints).Index(7).Name("Points");
             Map(m => m.pickDate).Index(8).Name("Date");
+            Map(m => m.state).Index(9).Name("State");
         }
     }
 }

@@ -63,8 +63,8 @@ namespace mockdraft_2020
             CheckForMismatches(list6);
 
             CheckForMismatches($"mocks{Path.DirectorySeparatorChar}{draftDate}-mock.csv");
-            CheckForMismatches($"mocks{Path.DirectorySeparatorChar}2020-01-11-mock.csv");
-            CheckForMismatches($"mocks{Path.DirectorySeparatorChar}2020-01-15-mock.csv");
+            //CheckForMismatches($"mocks{Path.DirectorySeparatorChar}2020-01-11-mock.csv");
+            //CheckForMismatches($"mocks{Path.DirectorySeparatorChar}2020-01-15-mock.csv");
             
 
 
@@ -176,6 +176,7 @@ namespace mockdraft_2020
             Console.WriteLine(mdp.school);
             Console.WriteLine(mdp.position);
             Console.WriteLine(mdp.reachValue);
+            Console.WriteLine(mdp.state);
             return mdp;
         }
         public static string getDraftDate(HtmlAgilityPack.HtmlDocument doc)
