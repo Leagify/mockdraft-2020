@@ -1,9 +1,12 @@
 using System;
+using System.Collections.Generic;
 using CsvHelper.Configuration;
+using CsvHelper;
+using System.IO;
+using System.Linq;
 
 namespace mockdraft_2020
 {
-
     public class MockDraftPick
     {
         public int round;
@@ -15,6 +18,7 @@ namespace mockdraft_2020
         public string reachValue;
         public int leagifyPoints;
         public string pickDate;
+        public string state;
 
 
         public MockDraftPick(){}
@@ -29,6 +33,7 @@ namespace mockdraft_2020
             this.reachValue = relativeVal;
             this.leagifyPoints = convertPickToPoints(pick);
             this.pickDate = pickDate;
+            this.state = getState(school);
         }
         public static int convertPickToRound(string pick)
         {
@@ -142,6 +147,22 @@ namespace mockdraft_2020
             }
             return 0;
         }
+        public static string getState(string school)
+        {
+            // Get Schools and the States where they are located.
+            List<School> schoolsAndConferences;
+            using (var reader = new StreamReader($"info{Path.DirectorySeparatorChar}SchoolStatesAndConferences.csv"))
+            using (var csv = new CsvReader(reader))
+            {
+                csv.Configuration.RegisterClassMap<SchoolCsvMap>();
+                schoolsAndConferences = csv.GetRecords<School>().ToList();
+            }
+            var stateResult = from s in schoolsAndConferences
+                                 where s.schoolName == school
+                                 select s.state;
+
+            return stateResult.FirstOrDefault().ToString();
+        }
     }
     public sealed class MockDraftPickCsvMap : ClassMap<MockDraftPick>
     {
@@ -157,6 +178,7 @@ namespace mockdraft_2020
             Map(m => m.reachValue).Name($"ReachValue");
             Map(m => m.leagifyPoints).Name("Points");
             Map(m => m.pickDate).Name("Date");
+            Map(m => m.state).Name("State");
         }
     }
 }
