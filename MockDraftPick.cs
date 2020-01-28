@@ -161,7 +161,17 @@ namespace mockdraft_2020
                                  where s.schoolName == school
                                  select s.state;
 
-            return stateResult.FirstOrDefault().ToString();
+            string sr = stateResult.FirstOrDefault().ToString();
+
+            if(sr.Length > 0)
+            {
+                return sr;
+            }
+            else
+            {
+                return "";
+            }
+            //return stateResult.FirstOrDefault().ToString();
         }
     }
     public sealed class MockDraftPickCsvMap : ClassMap<MockDraftPick>
