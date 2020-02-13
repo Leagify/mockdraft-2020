@@ -161,7 +161,18 @@ namespace mockdraft_2020
                                  where s.schoolName == school
                                  select s.state;
 
-            string sr = stateResult.FirstOrDefault().ToString();
+            var srfd = stateResult.FirstOrDefault();
+            string sr = "";
+
+            if (srfd != null)
+            {
+                sr = srfd.ToString();
+            }
+            else
+            {
+                Console.WriteLine("Error matching school!");
+            }
+            
 
             if(sr.Length > 0)
             {

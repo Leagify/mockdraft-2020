@@ -264,6 +264,8 @@ namespace mockdraft_2020
                     return "New Mexico State";
                 case "Southern Cal":
                     return "USC";
+                case "Mempis":
+                    return "Memphis";
                 default:
                     return school;
             }
