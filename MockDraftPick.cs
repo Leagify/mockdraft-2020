@@ -31,7 +31,7 @@ namespace mockdraft_2020
             this.school = school;
             this.position = pos;
             this.reachValue = relativeVal;
-            this.leagifyPoints = convertPickToPoints(pick);
+            this.leagifyPoints = convertPickToPoints(pick, this.round);
             this.pickDate = pickDate;
             this.state = getState(school);
         }
@@ -91,7 +91,7 @@ namespace mockdraft_2020
             }
             
         }
-        public static int convertPickToPoints(string pick)
+        public static int convertPickToPoints(string pick, int round)
         {
             int intpick = 0;
             var canParse = int.TryParse(pick, out intpick);
@@ -134,23 +134,23 @@ namespace mockdraft_2020
                 {
                     return 15;
                 } 
-                else if (intpick >= 65 && intpick <= 96)
+                else if (round == 3)
                 {
                     return 10;
                 } 
-                else if (intpick >= 97 && intpick <= 128)
+                else if (round == 4)
                 {
                     return 8;
                 } 
-                else if (intpick >= 129 && intpick <= 159)
+                else if (round == 5)
                 {
                     return 7;
                 } 
-                else if (intpick >= 160 && intpick <= 191)
+                else if (round == 6)
                 {
                     return 6;
                 } 
-                else if (intpick >= 192 && intpick <= 223)
+                else if (round == 7)
                 {
                     return 5;
                 }
