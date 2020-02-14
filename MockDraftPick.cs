@@ -37,12 +37,13 @@ namespace mockdraft_2020
         }
         public static int convertPickToRound(string pick)
         {
-            // I'm not certain if this mock will add compensatory picks. 
+            // Compensatory picks added on 2/1/20
             int intpick = 0;
             var canParse = int.TryParse(pick, out intpick);
             if (canParse)
             {
                 /* 
+                    Pick numbers without comp picks:
                     Picks 1-32 : Round 1
                     Picks 33-64: Round 2
                     Picks 65-96: Round 3
@@ -50,6 +51,15 @@ namespace mockdraft_2020
                     Picks 129-159: Round 5
                     Picks 160-191: Round 6
                     Picks 192-223: Round 7
+
+                    Pick numbers with comp picks:
+                    Round 1 = picks 1-32
+                    Round 2 = picks 33-64 
+                    Round 3 = picks 65-103
+                    Round 4 = picks 104-146
+                    Round 5 = picks 147-179
+                    Round 6 = picks 180-214
+                    Round 7 = picks 215-255
                 */
                 if(intpick >= 1 && intpick <= 32)
                 {
@@ -57,19 +67,19 @@ namespace mockdraft_2020
                 } else if (intpick >= 33 && intpick <= 64)
                 {
                     return 2;
-                } else if (intpick >= 65 && intpick <= 96)
+                } else if (intpick >= 65 && intpick <=103)
                 {
                     return 3;
-                } else if (intpick >= 97 && intpick <= 128)
+                } else if (intpick >= 104 && intpick <= 146)
                 {
                     return 4;
-                } else if (intpick >= 129 && intpick <= 159)
+                } else if (intpick >= 147 && intpick <= 179)
                 {
                     return 5;
-                } else if (intpick >= 160 && intpick <= 191)
+                } else if (intpick >= 180 && intpick <= 214)
                 {
                     return 6;
-                } else if (intpick >= 192 && intpick <= 223)
+                } else if (intpick >= 215 && intpick <= 255)
                 {
                     return 7;
                 }
