@@ -266,6 +266,8 @@ namespace mockdraft_2020
                     return "USC";
                 case "Mempis":
                     return "Memphis";
+                case "0":
+                    return "Georgia"; //Random Jake Fromm thing.
                 default:
                     return school;
             }
