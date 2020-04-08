@@ -1,0 +1,256 @@
+Pick,Round,Player,School,Position,Team,ReachValue,Points,Date,State
+1,1,Joe Burrow,LSU,QB,Cincinnati,-1,40,2020-04-07,Louisiana
+2,1,Chase Young,Ohio State,EDGE,Washington,+1,35,2020-04-07,Ohio
+3,1,Tua Tagovailoa,Alabama,QB,LA Chargers (SIM Trade),-1,35,2020-04-07,Alabama
+4,1,Isaiah Simmons,Clemson,S,Carolina (SIM Trade),+1,35,2020-04-07,South Carolina
+5,1,Justin Herbert,Oregon,QB,Miami,-7,35,2020-04-07,Oregon
+6,1,Jeffrey Okudah,Ohio State,CB,Detroit (SIM Trade),+0,35,2020-04-07,Ohio
+7,1,Tristan Wirfs,Iowa,OT,NY Giants (SIM Trade),+0,35,2020-04-07,Iowa
+8,1,Jedrick Wills,Alabama,OT,Arizona,-8,35,2020-04-07,Alabama
+9,1,Derrick Brown,Auburn,DL1T,Jacksonville,+4,35,2020-04-07,Alabama
+10,1,Andrew Thomas,Georgia,OT,Cleveland,-3,35,2020-04-07,Georgia
+11,1,Mekhi Becton,Louisville,OT,Miami (SIM Trade),+0,30,2020-04-07,Kentucky
+12,1,C.J. Henderson,Florida,CB,Las Vegas,-6,30,2020-04-07,Florida
+13,1,Henry Ruggs III,Alabama,WR,San Francisco (Trade),-1,30,2020-04-07,Alabama
+14,1,Josh Jones,Houston,OT,Tampa Bay,-14,30,2020-04-07,Texas
+15,1,Jerry Jeudy,Alabama,WR,Denver,+5,30,2020-04-07,Alabama
+16,1,Javon Kinlaw,South Carolina,DL3T,Atlanta,+8,30,2020-04-07,South Carolina
+17,1,CeeDee Lamb,Oklahoma,WR,Baltimore (SIM Trade),+8,30,2020-04-07,Oklahoma
+18,1,Jordan Love,Utah State,QB,New England (SIM Trade),+1,30,2020-04-07,Utah
+19,1,K'Lavon Chaisson,LSU,EDGE,Tennessee (SIM Trade),+4,30,2020-04-07,Louisiana
+20,1,Austin Jackson,USC,OT,Jacksonville (Trade),-17,30,2020-04-07,California
+21,1,Justin Jefferson,LSU,WR,Philadelphia,-3,25,2020-04-07,Louisiana
+22,1,Denzel Mims,Baylor,WR,Minnesota (Trade),-18,25,2020-04-07,Texas
+23,1,Laviska Shenault,Colorado,WR,NY Jets (SIM Trade),-10,25,2020-04-07,Colorado
+24,1,Jalen Reagor,TCU,WR,New Orleans,-18,25,2020-04-07,Texas
+25,1,Tee Higgins,Clemson,WR,Las Vegas (SIM Trade),+5,25,2020-04-07,South Carolina
+26,1,Xavier McKinney,Alabama,S,Green Bay (SIM Trade),+7,25,2020-04-07,Alabama
+27,1,Yetur Gross-Matos,Penn State,EDGE,Dallas (SIM Trade),+2,25,2020-04-07,Pennsylvania
+28,1,Trevon Diggs,Alabama,CB,Dallas (SIM Trade),+6,25,2020-04-07,Alabama
+29,1,A.J. Epenesa,Iowa,DL5T,Minnesota (SIM Trade),+6,25,2020-04-07,Iowa
+30,1,D'Andre Swift,Georgia,RB,Miami (SIM Trade),+1,25,2020-04-07,Georgia
+31,1,Cesar Ruiz,Michigan,OC,San Francisco,-4,25,2020-04-07,Michigan
+32,1,Kristian Fulton,LSU,CB,Minnesota (SIM Trade),+2,25,2020-04-07,Louisiana
+33,2,Netane Muti,Fresno State,OG,Cincinnati,+6,20,2020-04-07,California
+34,2,Bryce Hall,Virginia,CB,Indianapolis (Trade),-28,20,2020-04-07,Virginia
+35,2,Shane Lemieux,Oregon,OG,Detroit,-10,20,2020-04-07,Oregon
+36,2,Lloyd Cushenberry,LSU,OC,NY Giants,-11,20,2020-04-07,Louisiana
+37,2,Patrick Queen,LSU,OLB,Detroit (SIM Trade),+16,20,2020-04-07,Louisiana
+38,2,Grant Delpit,LSU,S,NY Giants (SIM Trade),+2,20,2020-04-07,Louisiana
+39,2,Kyle Dugger,Lenoir–Rhyne,S,Miami,-7,20,2020-04-07,North Carolina
+40,2,A.J. Terrell,Clemson,CB,Houston (Trade),+2,20,2020-04-07,South Carolina
+41,2,Kenneth Murray,Oklahoma,ILB,Cleveland,+15,20,2020-04-07,Oklahoma
+42,2,Damon Arnette,Ohio State,CB,Jacksonville (SIM Trade),-24,20,2020-04-07,Ohio
+43,2,Solomon Kindley,Georgia,OG,Chicago (Trade),+0,20,2020-04-07,Georgia
+44,2,John Simpson,Clemson,OG,Indianapolis,-16,20,2020-04-07,South Carolina
+45,2,Antoine Winfield Jr.,Minnesota,S,Tampa Bay,+13,20,2020-04-07,Minnesota
+46,2,Jaylon Johnson,Utah,CB,Denver,-2,20,2020-04-07,Utah
+47,2,Julian Okwara,Notre Dame,EDGE,Atlanta,-35,20,2020-04-07,Indiana
+48,2,Prince Tega Wanogho,Auburn,OT,NY Jets,-3,20,2020-04-07,Alabama
+49,2,Jonathan Taylor,Wisconsin,RB,Pittsburgh,+8,15,2020-04-07,Wisconsin
+50,2,Jeff Gladney,TCU,CB,Chicago,-8,15,2020-04-07,Texas
+51,2,Terrell Lewis,Alabama,EDGE,Seattle (SIM Trade),+2,15,2020-04-07,Alabama
+52,2,Malik Harrison,Ohio State,ILB,LA Rams,+0,15,2020-04-07,Ohio
+53,2,Brandon Aiyuk,Arizona State,WR,Philadelphia (SIM Trade),-1,15,2020-04-07,Arizona
+54,2,Zack Baun,Wisconsin,EDGE,Buffalo,+15,15,2020-04-07,Wisconsin
+55,2,Jabari Zuniga,Florida,EDGE,Baltimore (SIM Trade),-4,15,2020-04-07,Florida
+56,2,Alton Robinson,Syracuse,EDGE,NY Jets (SIM Trade),-40,15,2020-04-07,New York
+57,2,Marlon Davidson,Auburn,DL5T,Houston,-13,15,2020-04-07,Alabama
+58,2,J.K. Dobbins,Ohio State,RB,Kansas City (SIM Trade),+2,15,2020-04-07,Ohio
+59,2,Ezra Cleveland,Boise State,OT,Seattle (SIM Trade),-5,15,2020-04-07,Idaho
+60,2,Ross Blacklock,TCU,DL3T,Seattle (SIM Trade),+26,15,2020-04-07,Texas
+61,2,Tyler Johnson,Minnesota,WR,Las Vegas (SIM Trade),-19,15,2020-04-07,Minnesota
+62,2,Michael Pittman Jr.,USC,WR,Green Bay,-12,15,2020-04-07,California
+63,2,Curtis Weaver,Boise State,EDGE,Kansas City (Trade),-8,15,2020-04-07,Idaho
+64,2,Clyde Edwards-Helaire,LSU,RB,Seattle (Trade),-5,15,2020-04-07,Louisiana
+65,3,Justin Madubuike,Texas A&M,DL3T,Cincinnati,+34,10,2020-04-07,Texas
+66,3,Hunter Bryant,Washington,TE,Washington,+13,10,2020-04-07,Washington
+67,3,Neville Gallimore,Oklahoma,DL3T,Detroit,+23,10,2020-04-07,Oklahoma
+68,3,Isaiah Wilson,Georgia,OT,NY Jets (Trade),+13,10,2020-04-07,Georgia
+69,3,Damien Lewis,LSU,OG,Carolina,-4,10,2020-04-07,Louisiana
+70,3,K.J. Hamler,Penn State,WRS,Miami,+9,10,2020-04-07,Pennsylvania
+71,3,Hakeem Adeniji,Kansas,OT,LA Chargers,-6,10,2020-04-07,Kansas
+72,3,James Lynch,Baylor,DL5T,Arizona,+15,10,2020-04-07,Texas
+73,3,Jacob Eason,Washington,QB,Jacksonville,+23,10,2020-04-07,Washington
+74,3,Davon Hamilton,Ohio State,DL1T,Cleveland,+2,10,2020-04-07,Ohio
+75,3,Donovan Peoples-Jones,Michigan,WR,Indianapolis,-6,10,2020-04-07,Michigan
+76,3,Zack Moss,Utah,RB,Tampa Bay,-14,10,2020-04-07,Utah
+77,3,Darryl Williams,Mississippi State,OC,Denver,+2,10,2020-04-07,Mississippi
+78,3,Cameron Dantzler,Mississippi State,CB,Atlanta,-6,10,2020-04-07,Mississippi
+79,3,Tyler Biadasz,Wisconsin,OC,NY Jets,-6,10,2020-04-07,Wisconsin
+80,3,Jalen Hurts,Alabama,QB,Las Vegas,+1,10,2020-04-07,Alabama
+81,3,Troy Dye,Oregon,ILB,Kansas City (SIM Trade),+13,10,2020-04-07,Oregon
+82,3,Devin Duvernay,Texas,WRS,Dallas,-23,10,2020-04-07,Texas
+83,3,McTelvin Agim,Arkansas,DL5T,Denver (Trade),+1,10,2020-04-07,Arkansas
+84,3,Darrell Taylor,Tennessee,EDGE,LA Rams,-16,10,2020-04-07,Tennessee
+85,3,Anfernee Jennings,Alabama,EDGE,Detroit (Trade),-19,10,2020-04-07,Alabama
+86,3,Chase Claypool,Notre Dame,WR,Buffalo,-1,10,2020-04-07,Indiana
+87,3,Cole Kmet,Notre Dame,TE,NY Jets (SIM Trade),+20,10,2020-04-07,Indiana
+88,3,Josh Uche,Michigan,OLB,New Orleans,+5,10,2020-04-07,Michigan
+89,3,Raekwon Davis,Alabama,DL3T,Minnesota,+13,10,2020-04-07,Alabama
+90,3,Antonio Gandy-Golden,Liberty,WR,Houston,-12,10,2020-04-07,Virginia
+91,3,Akeem Davis-Gaither,Appalachian State,OLB,Las Vegas (Trade),-30,10,2020-04-07,North Carolina
+92,3,Ben Bredeson,Michigan,OG,Baltimore,+6,10,2020-04-07,Michigan
+93,3,Adam Trautman,Dayton,TE,Tennessee,-6,10,2020-04-07,Ohio
+94,3,Logan Stenberg,Kentucky,OG,Miami (SIM Trade),+3,10,2020-04-07,Kentucky
+95,3,Rashard Lawrence,LSU,DL1T,Denver (Trade),-8,10,2020-04-07,Louisiana
+96,3,A.J. Green,Oklahoma State,CB,Kansas City,-10,10,2020-04-07,Oklahoma
+97,3,Jeremy Chinn,Southern Illinois,S,Cleveland (Trade),+2,10,2020-04-07,Illinois
+98,3,Khalil Davis,Nebraska,DL3T,New England (Comp),+33,10,2020-04-07,Nebraska
+99,3,K.J. Hill,Ohio State,WR,NY Giants (Comp),-8,10,2020-04-07,Ohio
+100,3,Harrison Bryant,Florida Atlantic,TE,New England (Comp),-14,10,2020-04-07,Florida
+101,3,Van Jefferson,Florida,WR,Seattle (Comp),-36,10,2020-04-07,Florida
+102,3,Carlos Davis,Nebraska,DL1T,Pittsburgh (Comp),-2,10,2020-04-07,Nebraska
+103,3,Matt Hennessy,Temple,OC,Philadelphia (Comp),-38,10,2020-04-07,Pennsylvania
+104,4,Jonah Jackson,Ohio State,OG,LA Rams (Comp),-18,8,2020-04-07,Ohio
+105,4,Jordan Elliott,Missouri,DL3T,Las Vegas (SIM Trade),-8,8,2020-04-07,Missouri
+106,4,Shyheim Carter,Alabama,CB,Baltimore (Comp),+13,8,2020-04-07,Alabama
+107,4,Ashtyn Davis,California,S,Cincinnati,+9,8,2020-04-07,California
+108,4,Calvin Throckmorton,Oregon,OT,Washington,-1,8,2020-04-07,Oregon
+109,4,A.J. Dillon,Boston College,RB,Detroit,+12,8,2020-04-07,Massachusetts
+110,4,Jonathan Greenard,Florida,EDGE,NY Giants,+0,8,2020-04-07,Florida
+111,4,Bradlee Anae,Utah,EDGE,Houston (Trade),-1,8,2020-04-07,Utah
+112,4,James Proche,SMU,WRS,LA Chargers,+1,8,2020-04-07,Texas
+113,4,Jordyn Brooks,Texas Tech,ILB,Carolina,+25,8,2020-04-07,Texas
+114,4,Cam Akers,Florida State,RB,Arizona,+6,8,2020-04-07,Florida
+115,4,Alex Highsmith,Charlotte,EDGE,Cleveland,-5,8,2020-04-07,North Carolina
+116,4,Collin Johnson,Texas,WR,Jacksonville (SIM Trade),-23,8,2020-04-07,Texas
+117,4,Gabriel Davis,UCF,WR,Tampa Bay,-23,8,2020-04-07,Florida
+118,4,Trey Adams,Washington,OT,Denver,-9,8,2020-04-07,Washington
+119,4,Logan Wilson,Wyoming,ILB,Atlanta,+4,8,2020-04-07,Wyoming
+120,4,Jake Fromm,Georgia,QB,NY Jets,+57,8,2020-04-07,Georgia
+121,4,Jack Driscoll,Auburn,OT,Las Vegas,-15,8,2020-04-07,Alabama
+122,4,Yasir Durant,Missouri,OT,Indianapolis,-29,8,2020-04-07,Missouri
+123,4,Leki Fotu,Utah,DL1T,Dallas,+6,8,2020-04-07,Utah
+124,4,Jacob Phillips,LSU,ILB,Pittsburgh,+30,8,2020-04-07,Louisiana
+125,4,Davion Taylor,Colorado,OLB,New England (Trade),+1,8,2020-04-07,Colorado
+126,4,Ke'Shawn Vaughn,Vanderbilt,RB,LA Rams,-5,8,2020-04-07,Tennessee
+127,4,Darnay Holmes,UCLA,CB,Philadelphia,+8,8,2020-04-07,California
+128,4,Robert Hunt,Louisiana-Lafayette,OT,Buffalo,-54,8,2020-04-07,Louisiana
+129,4,Khaleke Hudson,Michigan,OLB,Baltimore (Trade),-1,8,2020-04-07,Michigan
+130,4,Lamar Jackson,Nebraska,CB,New Orleans,+1,8,2020-04-07,Nebraska
+131,4,Cam Brown,Penn State,ILB,Arizona,+5,8,2020-04-07,Pennsylvania
+132,4,K'Von Wallace,Clemson,S,Minnesota,+14,8,2020-04-07,South Carolina
+133,4,Casey Toohill,Stanford,EDGE,Seattle,-66,8,2020-04-07,California
+134,4,Larrell Murchison,NC State,DL5T,Baltimore,+18,8,2020-04-07,North Carolina
+135,4,Nick Harris,Washington,OC,Pittsburgh (Trade),+31,8,2020-04-07,Washington
+136,4,Willie Gay Jr.,Mississippi State,OLB,Green Bay,+3,8,2020-04-07,Mississippi
+137,4,Markus Bailey,Purdue,ILB,Jacksonville (SIM Trade),+2,8,2020-04-07,Indiana
+138,4,Jake Hanson,Oregon,OC,Kansas City,+13,8,2020-04-07,Oregon
+139,4,Jon Runyan,Michigan,OG,Tampa Bay (Comp),-22,8,2020-04-07,Michigan
+140,4,Brycen Hopkins,Purdue,TE,Jacksonville (Comp),+12,8,2020-04-07,Indiana
+141,4,Lavert Hill,Michigan,CB,Miami (Comp),-4,8,2020-04-07,Michigan
+142,4,Troy Pride Jr.,Notre Dame,CB,Washington (Comp),-2,8,2020-04-07,Indiana
+143,4,Shaun Bradley,Temple,OLB,Atlanta (Comp),-9,8,2020-04-07,Pennsylvania
+144,4,Brandon Jones,Texas,S,Dallas (SIM Trade),+2,8,2020-04-07,Texas
+145,4,Julian Blackmon,Utah,S,Philadelphia (Comp),-14,8,2020-04-07,Utah
+146,4,Eno Benjamin,Arizona State,RB,Philadelphia (Comp),-44,8,2020-04-07,Arizona
+147,5,Matt Peart,Connecticut,OT,Cincinnati,+9,7,2020-04-07,Connecticut
+148,5,Joshua Kelley,UCLA,RBC,Carolina,+25,7,2020-04-07,California
+149,5,Isaiah Hodgins,Oregon State,WR,Detroit,-6,7,2020-04-07,Oregon
+150,5,Jason Strowbridge,North Carolina,DL5T,NY Giants,+16,7,2020-04-07,North Carolina
+151,5,Albert Okwuegbunam,Missouri,TE,LA Chargers,+19,7,2020-04-07,Missouri
+152,5,John Hightower,Boise State,WR,Carolina,-8,7,2020-04-07,Idaho
+153,5,Joe Bachie,Michigan State,ILB,Miami,-9,7,2020-04-07,Michigan
+154,5,Khalid Kareem,Notre Dame,EDGE,Miami (Trade),-10,7,2020-04-07,Indiana
+155,5,Trevis Gipson,Tulsa,DL5T,Kansas City,-8,7,2020-04-07,Oklahoma
+156,5,Noah Igbinoghene,Auburn,CB,San Francisco (Trade),+8,7,2020-04-07,Alabama
+157,5,Lamical Perine,Florida,RB,Jacksonville (Trade),+11,7,2020-04-07,Florida
+158,5,Amik Robertson,Louisiana Tech,CB,NY Jets,+0,7,2020-04-07,Louisiana
+159,5,J.R. Reed,Georgia,S,Las Vegas,+12,7,2020-04-07,Georgia
+160,5,Dalton Keene,Virginia Tech,TE,Indianapolis,+7,7,2020-04-07,Virginia
+161,5,Anthony Gordon,Washington State,QB,Tampa Bay,+60,7,2020-04-07,Washington
+162,5,Quartney Davis,Texas A&M,WR,Washington (Trade),-3,7,2020-04-07,Texas
+163,5,Antoine Brooks Jr.,Maryland,S,Chicago,+20,7,2020-04-07,Maryland
+164,5,John Molchon,Boise State,OG,Baltimore,-9,7,2020-04-07,Idaho
+165,5,Chapelle Russell,Temple,OLB,Jacksonville (Trade),-1,7,2020-04-07,Pennsylvania
+166,5,Benito Jones,Ole Miss,DL1T,Detroit (Trade),-6,7,2020-04-07,Mississippi
+167,5,Shaquille Quarterman,Miami (FL),ILB,Buffalo,-17,7,2020-04-07,Florida
+168,5,Mykal Walker,Fresno State,ILB,Philadelphia (Trade),-2,7,2020-04-07,California
+169,5,Aaron Fuller,Washington,WRS,New Orleans,-31,7,2020-04-07,Washington
+170,5,Antonio Gibson,Memphis,WR,Baltimore (Trade),-15,7,2020-04-07,Tennessee
+171,5,Terence Steele,Texas Tech,OT,Houston,+15,7,2020-04-07,Texas
+172,5,Bryan Edwards,South Carolina,WR,New England (Trade),-25,7,2020-04-07,South Carolina
+173,5,Justin Strnad,Wake Forest,OLB,Miami (Trade),+6,7,2020-04-07,North Carolina
+174,5,Keith Ismael,San Diego State,OC,Las Vegas,+6,7,2020-04-07,California
+175,5,Lucas Niang,TCU,OT,Green Bay,-6,7,2020-04-07,Texas
+176,5,Ben Bartch,St. John's,OG,San Francisco,-31,7,2020-04-07,Minnesota
+177,5,Darrynton Evans,Appalachian State,RBC,Kansas City,+28,7,2020-04-07,North Carolina
+178,5,Justin Herron,Wake Forest,OG,Denver (Comp),-25,7,2020-04-07,North Carolina
+179,5,Raequan Williams,Michigan State,DL3T,Dallas (Comp),+22,7,2020-04-07,Michigan
+180,6,Luq Barcoo,San Diego State,CB,Cincinnati,+0,6,2020-04-07,California
+181,6,Nate Stanley,Iowa,QB,Denver (Trade),+31,6,2020-04-07,Iowa
+182,6,Cole McDonald,Hawaii,QB,Detroit,+11,6,2020-04-07,Hawaii
+183,6,Michael Onwenu,Michigan,OG,NY Giants,-44,6,2020-04-07,Michigan
+184,6,Cheyenne O'Grady,Arkansas,TE,Carolina,+10,6,2020-04-07,Arkansas
+185,6,Joe Reed,Virginia,WR,Miami,-27,6,2020-04-07,Virginia
+186,6,Evan Weaver,California,ILB,Detroit (SIM Trade),+10,6,2020-04-07,California
+187,6,Robert Windsor,Penn State,DL3T,Cleveland (Trade),+33,6,2020-04-07,Pennsylvania
+188,6,Lynn Bowden Jr.,Kentucky,WR,Buffalo (Trade),-31,6,2020-04-07,Kentucky
+189,6,Nick Coe,Auburn,DL5T,Jacksonville (SIM Trade),+11,6,2020-04-07,Alabama
+190,6,Stephen Sullivan,LSU,TE,Philadelphia (Trade),-70,6,2020-04-07,Louisiana
+191,6,Javon Leake,Maryland,RB,NY Jets,+14,6,2020-04-07,Maryland
+192,6,Tanner Muse,Clemson,S,Green Bay (Trade),-4,6,2020-04-07,South Carolina
+193,6,Tyler Huntley,Utah,QB,Indianapolis,-8,6,2020-04-07,Utah
+194,6,D.J. Wonnum,South Carolina,EDGE,Tampa Bay,+11,6,2020-04-07,South Carolina
+195,6,Kenny Willekes,Michigan State,EDGE,New England (Trade),+8,6,2020-04-07,Michigan
+196,6,Carter Coughlin,Minnesota,EDGE,Chicago,-10,6,2020-04-07,Minnesota
+197,6,Cordel Iwuagwu,TCU,OG,Indianapolis (Trade),-38,6,2020-04-07,Texas
+198,6,Terrell Burgess,Utah,S,Pittsburgh,+19,6,2020-04-07,Utah
+199,6,Stanford Samuels III,Florida State,CB,LA Rams,+13,6,2020-04-07,Florida
+200,6,Steven Montez,Colorado,QB,Chicago (Trade),-24,6,2020-04-07,Colorado
+201,6,Charlie Heck,North Carolina,OT,Minnesota (Trade),-8,6,2020-04-07,North Carolina
+202,6,Josiah Deguara,Cincinnati,TE,Arizona (Trade),-8,6,2020-04-07,Ohio
+203,6,Jacob Breeland,Oregon,TE,New Orleans,-44,6,2020-04-07,Oregon
+204,6,Anthony McFarland Jr.,Maryland,RBC,New England (Trade),+35,6,2020-04-07,Maryland
+205,6,Danny Pinter,Ball State,OG,Minnesota,-104,6,2020-04-07,Indiana
+206,6,John Reid,Penn State,CB,Jacksonville (Trade),-7,6,2020-04-07,Pennsylvania
+207,6,Michael Ojemudia,Iowa,S,Buffalo,-7,6,2020-04-07,Iowa
+208,6,Reggie Robinson II,Tulsa,CB,Green Bay (Trade),-22,6,2020-04-07,Oklahoma
+209,6,James Robinson,Illinois State,RB,Green Bay,+16,6,2020-04-07,Illinois
+210,6,Azur Kamara,Kansas,ILB,San Francisco,+2,6,2020-04-07,Kansas
+211,6,Dane Jackson,Pitt,CB,NY Jets (Trade),-6,6,2020-04-07,Pennsylvania
+212,6,Malcolm Roach,Texas,DL5T,New England (Comp),+24,6,2020-04-07,Texas
+213,6,Alex Taylor,South Carolina State,OT,New England (Comp),+24,6,2020-04-07,South Carolina
+214,6,Jordan Mack,Virginia,OLB,Seattle (Comp),+23,6,2020-04-07,Virginia
+215,7,Jonathan Garvin,Miami (FL),EDGE,Cincinnati,+0,5,2020-04-07,Florida
+216,7,Scoota Harris,Arkansas,ILB,Washington,+21,5,2020-04-07,Arkansas
+217,7,James Smith-Williams,NC State,EDGE,San Francisco (Trade),-6,5,2020-04-07,North Carolina
+218,7,Salvon Ahmed,Washington,RBC,NY Giants,+43,5,2020-04-07,Washington
+219,7,Rodney Clemons,SMU,S,Minnesota,-7,5,2020-04-07,Texas
+220,7,Chauncey Rivers,Mississippi State,DL5T,LA Chargers,+4,5,2020-04-07,Mississippi
+221,7,Francis Bernard,Utah State,ILB,Carolina,+19,5,2020-04-07,Utah
+222,7,Kamren Curl,Arkansas,S,Arizona,+4,5,2020-04-07,Arkansas
+223,7,Broderick Washington Jr.,Texas Tech,DL3T,Jacksonville,+19,5,2020-04-07,Texas
+224,7,Essang Bassey,Wake Forest,CB,Tennessee (Trade),-7,5,2020-04-07,North Carolina
+225,7,JaMycal Hasty,Baylor,RBC,Baltimore (Trade),+33,5,2020-04-07,Texas
+226,7,Quintez Cephus,Wisconsin,WR,Chicago (Trade),-6,5,2020-04-07,Wisconsin
+227,7,Bravvion Roy,Baylor,DL1T,Miami (Trade),-27,5,2020-04-07,Texas
+228,7,Darrion Daniels,Nebraska,DL1T,Atlanta (Trade),-34,5,2020-04-07,Nebraska
+229,7,Michael Divinity Jr.,LSU,OLB,Washington (Trade),+9,5,2020-04-07,Louisiana
+230,7,Frederick Mauigoa,Washington State,OC,New England (Trade),+25,5,2020-04-07,Washington
+231,7,Sean Pollard,Clemson,OC,Dallas,+3,5,2020-04-07,South Carolina
+232,7,Oluwole Betiku,Illinois,EDGE,Pittsburgh,+7,5,2020-04-07,Illinois
+233,7,David Woodward,Utah State,ILB,Chicago,+12,5,2020-04-07,Utah
+234,7,Benning Potoa'e,Washington,DL3T,LA Rams,-8,5,2020-04-07,Washington
+235,7,Harrison Hand,Temple,S,New England (Trade),+6,5,2020-04-07,Pennsylvania
+236,7,Joe Gaziano,Northwestern,DL5T,Green Bay (Trade),-57,5,2020-04-07,Illinois
+237,7,Levante Bellamy,Western Michigan,RBC,Denver (Trade),+43,5,2020-04-07,Michigan
+238,7,Michael Pinckney,Miami (FL),OLB,NY Giants (Trade),-3,5,2020-04-07,Florida
+239,7,James Morgan,Florida International,QB,Buffalo,+0,5,2020-04-07,Florida
+240,7,Tyler Clark,Georgia,DL1T,Houston,-47,5,2020-04-07,Georgia
+241,7,Jace Whittaker,Arizona,CB,New England (Trade),-10,5,2020-04-07,Arizona
+242,7,Josiah Coatney,Ole Miss,DL3T,Green Bay (Trade),-32,5,2020-04-07,Mississippi
+243,7,Saahdiq Charles,LSU,OT,Tennessee,-7,5,2020-04-07,Louisiana
+244,7,Darius Anderson,TCU,RB,Cleveland (Trade),+46,5,2020-04-07,Texas
+245,7,Thaddeus Moss,LSU,TE,San Francisco,-54,5,2020-04-07,Louisiana
+246,7,Trystan Colon-Castillo,Missouri,OC,Miami (Trade),-2,5,2020-04-07,Missouri
+247,7,Kamal Martin,Minnesota,ILB,NY Giants (Comp),-11,5,2020-04-07,Minnesota
+248,7,J.J. Taylor,Arizona,RBC,Houston (Comp),+37,5,2020-04-07,Arizona
+249,7,L'Jarius Sneed,Louisiana Tech,CB,Minnesota (Comp),-36,5,2020-04-07,Louisiana
+250,7,Alohi Gilman,Notre Dame,S,Houston (Comp),+17,5,2020-04-07,Indiana
+251,7,Austin Edwards,Ferris State,DL5T,Miami (Comp),+2,5,2020-04-07,Michigan
+252,7,LaDarius Hamilton,North Texas,EDGE,Denver (Comp),+8,5,2020-04-07,Texas
+253,7,Quez Watkins,Southern Miss,WR,Minnesota (Comp),+10,5,2020-04-07,Mississippi
+254,7,Jeremiah Dinson,Auburn,S,Denver (Comp),-3,5,2020-04-07,Alabama
+255,7,Colby Parkinson,Stanford,TE,NY Giants (Comp),-9,5,2020-04-07,California
