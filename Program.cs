@@ -268,6 +268,8 @@ namespace mockdraft_2020
                     return "Memphis";
                 case "0":
                     return "Georgia"; //Random Jake Fromm thing.
+                case "Southeast Missouri St":
+                    return "Southeast Missouri State";
                 default:
                     return school;
             }
